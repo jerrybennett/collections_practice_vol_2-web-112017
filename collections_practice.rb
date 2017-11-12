@@ -37,7 +37,7 @@ def organize_schools(array)
   hash = {}
   array.each do |school, data|
     data.each do |location, city|
-      hash[city]
+      hash[city] = []
     end
   end
 binding.pry
