@@ -38,6 +38,9 @@ def organize_schools(array)
   array.each do |school, data|
     data.each do |location, city|
       hash[city] = [school]
+      if school[data][:location] == hash[city]
+        hash[city] << school
+      end
     end
   end
 binding.pry
