@@ -26,11 +26,11 @@ def merge_data(keys, data)
   # found in a stackoverflow thread
   # data[0].values.map.with_index {|v, i| keys[i].merge(v)}
 
-  data.each do |i|
-    i.values.map.with_index do |value, index|
+
+    data[0].values.map.with_index do |value, index|
       keys[index].merge(value)
     end
-  end
+
   # data.each do |i|
   #   i.each do |name, info|
   #     info.each do |j, k|
