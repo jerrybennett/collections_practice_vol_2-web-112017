@@ -1,4 +1,3 @@
-require 'pry'
 def begins_with_r(array)
   array.all? {|word| word.start_with?("r")}
 end
@@ -35,14 +34,15 @@ end
 
 def organize_schools(array)
   hash = {}
-  array.each do |school, data|
-    data.each do |location, city|
-      hash[city] = []
-    end
-  end
+  # array.each do |school, data|
+  #   data.each do |location, city|
+  #     hash[city] = []
+  #   end
+  # end
   hash.each do |name, arr|
     array.each do |school, data|
       data.each do |location, city|
+        hash[city] = []
         if name == city
           arr << school
         end
