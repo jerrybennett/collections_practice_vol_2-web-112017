@@ -29,7 +29,8 @@ def merge_data(keys, data)
   data.each do |i|
     i.each do |name, info|
       info.each do |j|
-      new_arr << j
+        new_arr << j
+      end
     end
   end
 end
