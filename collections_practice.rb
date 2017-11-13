@@ -35,7 +35,7 @@ def merge_data(keys, data)
   # data[0].values.each.with_index do |value, index|
   #   arr << keys[index].merge(value)
   # end
-  return arr
+  # return arr
 end
 
 def find_cool(array)
