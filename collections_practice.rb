@@ -41,10 +41,10 @@ def organize_schools(array)
     end
   end
   hash.each do |name, arr|
-    array.each do |school_n, data|
+    array.each do |school, data|
       data.each do |location, city|
         if name == city
-          arr << school_n
+          arr << school
         end
       end
     end
