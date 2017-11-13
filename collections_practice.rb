@@ -25,20 +25,11 @@ end
 def merge_data(keys, data)
   # found in a stackoverflow thread
   # data[0].values.map.with_index {|v, i| keys[i].merge(v)}
-
-  data.each do |a, i|
-    a.values.map.with_index do |value, index|
-      keys[index].merge(value)
-    end
+  arr = []
+  data[0].values.each.with_index do |value, index|
+    arr << keys[index].merge(value)
   end
-
-  # data.each do |i|
-  #   i.each do |name, info|
-  #     info.each do |j, k|
-  #       new_arr << k
-  #     end
-  #   end
-  # end
+  return arr
 end
 
 def find_cool(array)
