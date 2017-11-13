@@ -25,6 +25,9 @@ end
 def merge_data(keys, data)
   # found in a stackoverflow thread
   data[0].values.map.with_index {|v, i| keys[i].merge(v)}
+  data.each do |name, info|
+    
+  end
 end
 
 def find_cool(array)
