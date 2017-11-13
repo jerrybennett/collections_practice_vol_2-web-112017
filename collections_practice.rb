@@ -27,7 +27,7 @@ def merge_data(keys, data)
   # data[0].values.map.with_index {|v, i| keys[i].merge(v)}
 
   data.each do |a, i|
-    i.values.map.with_index do |value, index|
+    a.values.map.with_index do |value, index|
       keys[index].merge(value)
     end
   end
