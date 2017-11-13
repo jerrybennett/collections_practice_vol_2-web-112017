@@ -23,8 +23,6 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  # found in a stackoverflow thread
-  # data[0].values.map.with_index {|v, i| keys[i].merge(v)}
   arr = []
   data[0].values.each do |i|
     arr << i
@@ -32,10 +30,6 @@ def merge_data(keys, data)
   arr.map.with_index do |value, index|
     keys[index].merge(value)
   end
-  # data[0].values.each.with_index do |value, index|
-  #   arr << keys[index].merge(value)
-  # end
-  # return arr
 end
 
 def find_cool(array)
