@@ -38,7 +38,26 @@ def organize_schools(array)
   array.each do |school, data|
     data.each do |location, city|
       hash[city] = []
+      hash.each do |name, arr|
+        school.each do |d, l|
+          
+        end
+      end
     end
   end
+
+locations_hash = {}
+schools.collect do |k,v|
+  locations_hash[v[:location]] = []
+end
+locations_hash.each do |k,v|
+  schools.each do |k1,v1|
+    if k == v1[:location]
+      v << k1
+    end
+  end
+end
+
+
 binding.pry
 end
