@@ -25,17 +25,9 @@ end
 def merge_data(keys, data)
   # found in a stackoverflow thread
   new_arr = []
-  data[0].values.map.with_index {|v, i| keys[i].merge(v)}
+  # data[0].values.map.with_index {|v, i| keys[i].merge(v)}
   data.each do |name, info|
-    info.each do |i|
-      keys.each do |j, person|
-
-      end
-      new_arr << i
-    end
-  end
-  keys.each do |i|
-
+    new_arr << info
   end
 end
 
