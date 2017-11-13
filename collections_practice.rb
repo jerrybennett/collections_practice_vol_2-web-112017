@@ -49,5 +49,5 @@ def organize_schools(array)
       end
     end
   end
-binding.pry
+  return hash
 end
